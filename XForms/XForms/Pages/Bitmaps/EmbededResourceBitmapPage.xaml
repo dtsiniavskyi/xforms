@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:extensions="clr-namespace:XForms.Extensions;assembly=XForms"
+             x:Class="XForms.Pages.Bitmaps.EmbededResourceBitmapPage">
+  <StackLayout>
+    <Label Text="320 x 240 Pixel Bitmap" FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+    <Image Source="{extensions:ImageResource XForms.Images.profile-pic.png}" BackgroundColor="Aqua" SizeChanged="OnImageSizeChanged" />
+    <Label x:Name="label" FontSize="Medium" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" />
+    <Image Source="{extensions:ImageResource XForms.Images.profile-pic.png}" WidthRequest="100" HorizontalOptions="Center" BackgroundColor="Aqua" SizeChanged="OnImageSizeChanged" />
+  </StackLayout>
+</ContentPage>

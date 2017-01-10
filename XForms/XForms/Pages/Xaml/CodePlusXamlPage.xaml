@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XForms.Pages.Xaml.CodePlusXamlPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <StackLayout>
+        <Label BackgroundColor="#FF8080"
+               FontAttributes="Bold,Italic"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               IsVisible="True"
+               Opacity="0.75"
+               Text="Hello from XAML!"
+               TextColor="Blue"
+               VerticalOptions="CenterAndExpand" />
+
+    </StackLayout>
+</ContentPage>

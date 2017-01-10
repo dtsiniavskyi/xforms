@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="XForms.Pages.Xaml.MarkupExtensions"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XForms;assembly=XForms"
+             xmlns:toolkit="clr-namespace:Extensions;assembly=Extensions"
+  >
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <x:Double x:Key="D">20.9</x:Double>
+      <x:String x:Key="S">string</x:String>
+      <Label x:Key="Label1" Text="Label 1 from resources" TextColor="White"/>
+      <Label x:Key="Label2" Text="Label 2 from resources" TextColor="White"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+
+  <StackLayout HorizontalOptions="Center">
+    <Label
+           Text="{x:Static local:Consts.TitleFontSizeString}"
+           TextColor="{x:Static Color.White}"
+           FontAttributes="{x:Static Member=local:Consts.Emphasis}"
+           VerticalOptions="Center" />
+
+    <Label
+             Text="{x:Static local:Consts.TitleFontSizeString}"
+             TextColor="{x:Static Color.White}"
+           
+             VerticalOptions="Center">
+      <Label.FontAttributes>
+        <x:Static Member="local:Consts.Emphasis"></x:Static>
+      </Label.FontAttributes>
+
+    </Label>
+
+    <Label Text="{StaticResource S}" 
+           TextColor="{x:Static Color.White}" 
+           FontSize="{StaticResource D}" 
+           FontAttributes="Italic"
+           VerticalOptions="Center">
+    </Label>
+
+    <!--Width="200" Height="50"-->
+    <BoxView Color="{toolkit:HslColor H=0.67, S=1, L=0.5}"></BoxView>
+
+    <!--<StaticResourceExtension Key="label1"></StaticResourceExtension>-->
+    <!--<x:StaticResource ResourceKey="label1"></x:StaticResource>-->
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,32 @@
+﻿<ContentPage x:Class="XForms.Pages.Xaml.ScaryColorListPage"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+    </ContentPage.Padding>
+
+    <StackLayout>
+        <Frame OutlineColor="Accent">
+            <StackLayout Orientation="Horizontal">
+                <BoxView Color="Red" />
+                <Label Text="Red" VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+
+        <Frame OutlineColor="Accent">
+            <StackLayout Orientation="Horizontal">
+                <BoxView Color="Green" />
+                <Label Text="Green" VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+
+        <Frame OutlineColor="Accent">
+            <StackLayout Orientation="Horizontal">
+                <BoxView Color="Blue" />
+                <Label Text="Blue" VerticalOptions="Center" />
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>

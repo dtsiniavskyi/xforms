@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XForms.Pages.Styles.BasicStyleTargetTypePage">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <Style x:Key="viewStyle" TargetType="View">
+        <Setter Property="HorizontalOptions" Value="Center" />
+        <Setter Property="VerticalOptions" Value="CenterAndExpand" />
+        <Setter Property="BackgroundColor" Value="Pink" />
+      </Style>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+
+  <StackLayout>
+    <Button Text=" Carpe diem " Style="{StaticResource viewStyle}" />
+    <Label Text ="A bit of text" Style="{StaticResource viewStyle}" />
+    <Button Text=" Sapere aude " Style="{StaticResource viewStyle}" />
+    <Label Text ="Another bit of text" Style="{StaticResource viewStyle}" />
+    <Button Text=" Discere faciendo " Style="{StaticResource viewStyle}" />
+  </StackLayout>
+</ContentPage>
